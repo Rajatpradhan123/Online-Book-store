@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.Container {
+  height: 100%;
+  width: 100%;
+
+}
+
+a {
+  color: white;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  transition: 1s;
+  scale: 1.2;
+}
+
+input {
+
+  height: 2vmax;
+  width: 15vmax;
+  margin: 1vmax;
+}
+
+nav {
+  background-color: orange;
+  height: 4vmax;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+nav div {
+  height: 3vmax;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.Right button {
+
+  font-family: "Montserrat";
+  background-color: orange;
+  height: 3vmax;
+  width: 4vmax;
+  border-radius: 1vmax;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+}
+
+.Right input {
+
+  font-family: "Montserrat";
+  background-color: white;
+  height: 3vmax;
+  width: 15vmax;
+  border-radius: 2vmax;
+  border: solid black;
+  text-align: center;
+
+}
+
+
+
+
+#Nav1 {
+  height: 5vmax;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#Nav1 div {
+  height: 5vmax;
+  width: 20vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Nav1 h2 {
+  font-family: "Montserrat";
+  color: navy;
+
+}
+
+#span1 {
+  color: orange;
+}
+
+
+.FormBox {
+  height: 35vmax;
+  width: 40vmax;
+  background-color: rgba(128, 128, 128, 0.399);
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 30%;
+  margin-top: 1%;
+  border-radius: 2vmax;
+}
+
+
+.FormBox input {
+  text-align: center;
+  height: 2vmax;
+  width: 20vmax;
+  font-family: "Montserrat";
+  color: black;
+
+}
+
+.FormBox textarea {
+  text-align: center;
+  height: 8vmax;
+  width: 20vmax;
+  font-family: "Montserrat";
+}
+
+#Head1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin-left: 40%;
+  margin-top: 2%;
+}
+
+.FormBox button {
+  height: 2vmax;
+  width: 5vmax;
+  background-color: orange;
+  font-family: "Montserrat";
+  border: transparent;
+  border-radius: 2vmax;
+  cursor: pointer;
+
+}
+
+
+.Box1
+{
+  height: 18vmax;
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+border: solid black;
+margin-top: 2%;
+margin-left: 5%;
+}
+
+.Box1 h2
+{
+  font-size: 1vmax;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
