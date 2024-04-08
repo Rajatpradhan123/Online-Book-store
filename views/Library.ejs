@@ -4,26 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Document</title>
+    
+ <title>Document</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
-
+<body class="d-flex gap-3">
     <%- include('./partials/nav') %>
-<div class="Box1"><h2>Book Name = <%= data.name %>
-</h2>
-<h2>Author Name =<%= data.Author %>
-</h2>
-<h2>Book Price=<%= data.Price %>
-</h2>
-<h2>Book Quantity=<%= data.quantity %>
-</h2>
-<h2>Book Category=<%= data.Category %>
-</h2>
 
-</h2></div>
-        
+   
+ 
+<% Books.forEach((Book,index)=> { %>
+ 
+     <div class="card m-3"   style="width: 18rem; text-decoration: none; ">
+        <div class="card-body">
+          <h5 class="card-title"><%= Book.title %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><%= Book.Author %></h6>
+          <p class="card-text"><%= Book.Price %></p>
+          <p class="card-text"><%= Book.quantity %></p>
+          <p class="card-text"><%= Book.Description %></p>
+          <p class="card-text"><%= Book.Category %></p>
+          <a href="/delete/<%= index %>" class="card-link" >Delete</a>
+          <a href="#" class="card-link">Update</a>
+        </div>
+      </div> 
+  
+ 
+      
+    <% }) %>
+  
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

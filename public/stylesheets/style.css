@@ -11,12 +11,13 @@ html,
 body {
   width: 100%;
   height: 100%;
+  
 }
 
 .Container {
   height: 100%;
   width: 100%;
-
+  
 }
 
 a {
@@ -167,22 +168,4 @@ nav div {
 }
 
 
-.Box1
-{
-  height: 18vmax;
-  width: 30vmax;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-around;
-border: solid black;
-margin-top: 2%;
-margin-left: 5%;
-}
 
-.Box1 h2
-{
-  font-size: 1vmax;
-  font-family: "Montserrat";
-  font-weight: 300;
-}

@@ -1,11 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-const Book = []
+const Books = [
+ 
+]
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index',);
 });
 
 router.get('/Create', function (req, res, next) {
@@ -14,27 +16,31 @@ router.get('/Create', function (req, res, next) {
 
 
 
-router.get('/Readall', function (req, res, next) {
-  res.render("Readall", {});
-});
-
 
 router.get('/About', function (req, res, next) {
   res.render("About", {});
 });
 
-// router.post('/registor', (req, res,next)=> {
-//   console.log(req.body)
-//   res.render("registor" ,{data:req.body})
-// });
 
 
-
-router.post("/Library", (req, res,) => {
-  console.log(req.body)
-  res.render("Library", { data: req.body })
+router.get("/Library", (req, res,) => {
+  console.log(req.params)
+  res.render("Library", { Books:Books })
 });
 
+
+router.get('/delete/:id', (req, res)=> {
+Books.splice(req.params.id,1)
+res.redirect("/Library")
+});
+
+
+router.post("/Createnew", (req, res,) => {
+  console.log(req.body)
+  Books.push(req.body)
+  res.redirect("/Library")
+  
+});
 
 module.exports = router;
 
