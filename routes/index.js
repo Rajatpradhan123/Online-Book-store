@@ -2,6 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 const Books = [
+  {
+    title:"",
+    Author:"",
+    Price:"",
+    quantity:"",
+    Category:"",
+    description:""
+  }
  
 ]
 
@@ -41,6 +49,8 @@ router.post("/Createnew", (req, res,) => {
   res.redirect("/Library")
   
 });
+
+
 
 module.exports = router;
 
