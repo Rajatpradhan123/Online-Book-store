@@ -9,6 +9,15 @@ const Books = [
     quantity:"",
     Category:"",
     description:""
+  },
+
+  {
+    title:"",
+    Author:"",
+    Price:"",
+    quantity:"",
+    Category:"",
+    description:""
   }
  
 ]
@@ -43,14 +52,30 @@ res.redirect("/Library")
 });
 
 
-router.post("/Createnew", (req, res,) => {
+router.post("/Createnew", (req, res) => {
   console.log(req.body)
   Books.push(req.body)
   res.redirect("/Library")
   
 });
 
+router.get("/update/:id", (req, res,) => {
+  console.log(req.params.id)
+  
+  const Newbook = Books[req.params.id]
+  
+  res.render ("update" ,{data:Newbook , index: req.params.id})
+ 
 
+
+});
+
+
+router.post("/update/:id",(req,res,next)=>{
+  console.log(req.body)
+  Books[req.params.id] = req.body
+  res.redirect("/Library")
+})
 
 module.exports = router;
 
