@@ -10,16 +10,6 @@ const Books = [
     Category:"",
     description:""
   },
-
-  {
-    title:"",
-    Author:"",
-    Price:"",
-    quantity:"",
-    Category:"",
-    description:""
-  }
- 
 ]
 
 /* GET home page. */
