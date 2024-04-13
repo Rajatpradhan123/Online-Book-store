@@ -95,6 +95,12 @@ nav div {
   cursor: pointer;
 }
 
+.Right button:hover
+{
+  background-color: orangered;
+  transition: 1s;
+}
+
 .Right input {
 
   font-family: "Montserrat";
@@ -111,7 +117,7 @@ nav div {
 
 
 #Nav1 {
-  height: 5vmax;
+  height: 4vmax;
   width: 100%;
   background-color: white;
   display: flex;
