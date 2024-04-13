@@ -74,6 +74,14 @@ nav div {
 }
 
 
+#Nav1 div
+{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
 
 .Right button {
 
@@ -113,11 +121,12 @@ nav div {
 
 #Nav1 div {
   height: 5vmax;
-  width: 20vmax;
+  width: 30vmax;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 #Nav1 h2 {
