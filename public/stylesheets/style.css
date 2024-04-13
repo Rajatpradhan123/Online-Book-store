@@ -17,8 +17,21 @@ body {
 .Container {
   height: 100%;
   width: 100%;
+ 
+  background-image: url(https://images.unsplash.com/photo-1618365908648-e71bd5716cba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   
 }
+
+
+.overlay
+{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.488);
+}  
 
 nav a {
   color: white;
