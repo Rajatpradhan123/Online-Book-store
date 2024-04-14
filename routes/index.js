@@ -37,7 +37,7 @@ router.get("/Library", (req, res,) => {
 
 
 router.get('/delete/:id', (req, res)=> {
-Books.splice(req.params.id,)
+Books.splice(req.params.id,1)
 res.redirect("/Library")
 });
 

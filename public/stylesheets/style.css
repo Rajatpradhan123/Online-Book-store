@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap);
 * {
   margin: 0;
   padding: 0;
@@ -123,6 +123,78 @@ nav div {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+
+
+.overlay .Box1 
+{
+height: 83%;
+width: 50%;
+/* background-color: red; */
+position: relative;
+
+}
+
+#head2
+{
+  color: white;
+  height: 5vmax;
+  width: 5vmax;
+  font-size:5vmax;
+  font-family: "Montserrat";
+  font-weight: 650;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 5vmax;
+ 
+  
+}
+span
+{
+  color: orange;
+}
+
+
+#Box2
+{
+  height: 40%;
+  width: 90%;
+  /* background-color: red; */
+  margin-left: 40vmax;
+  margin-top: 13vmax;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#Box2 p
+{
+  font-family: "Montserrat";
+  font-size: 1.2vmax;
+  text-align: center;
+  color: white;
+
+}
+
+
+#Box2 button {
+
+  font-family: "Montserrat";
+  background-color: orange;
+  height: 3vmax;
+  width: 7vmax;
+  border-radius: 1vmax;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+}
+
+#Box2 button:hover
+{
+  background-color: orangered;
+  transition: 1s;
 }
 
 #Nav1 div {
